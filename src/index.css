@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #0B0B14;
+  --color-brand-panel: #151522;
+  --color-brand-primary: #635BFF;
+  --color-brand-secondary: #8875FF;
+  --color-brand-border: #2A2A3C;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-dark text-white font-sans antialiased;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #root {
+    @apply h-full w-full;
+  }
+
+  button, a, [role="button"] {
+    cursor: pointer !important;
+  }
+}
